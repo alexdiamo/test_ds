@@ -107,9 +107,28 @@ li {
 	margin: auto;
 }
 
-// .col_padding-0 {
-// 	padding: 0;
-// }
+.img-scale {
+	overflow: hidden;
+
+	&:hover {
+		img {
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+	}
+
+	img {
+		width: 100%;
+		-webkit-transition: 500ms all ease;
+		-moz-transition: 500ms all ease;
+		-ms-transition: 500ms all ease;
+		-o-transition: 500ms all ease;
+		transition: 500ms all ease;
+	}
+}
 
 // ---------- HEADER ----------
 .header {
@@ -317,10 +336,6 @@ li {
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
 	    transform: translateY(-50%);
-	}
-
-	&__img {
-		width: 100%;
 	}
 }
 
@@ -611,10 +626,6 @@ li {
 		    padding-bottom: 40px;
 		}
 	}
-
-	&__photo {
-		width: 100%;
-	}
 	
 	&__position {
 		font-family: @raleway;
@@ -666,7 +677,7 @@ li {
 	}
 }
 
-// ---------- TEAM ----------
+// ---------- LOGOS ----------
 @padding-left: 192px;
 @logo-width: 80px;
 
