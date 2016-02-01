@@ -176,7 +176,7 @@ li {
 	    -moz-transform: translate(-50%,-50%);
 	    -ms-transform: translate(-50%,-50%);
 	    -o-transform: translate(-50%,-50%);
-	    transform: translate(-50%,-50%);	    
+	    transform: translate(-50%,-50%);
 
 	    > a {
 	    	display: block;
@@ -775,6 +775,30 @@ li {
 			&:-moz-placeholder           { color: lighten(@navy, 15%); }
 		}
 	}	
+}
+
+// ---------- ANIMATIONS ----------
+.pulsation-button {
+	-webkit-animation: pulsation 3s linear;
+    animation: pulsation 3s linear;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsation{
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+@keyframes pulsation{
+    50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
 }
 
 // ---------- DESKTOPS XXL ----------
