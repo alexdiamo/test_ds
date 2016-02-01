@@ -107,9 +107,9 @@ li {
 	margin: auto;
 }
 
-.col_padding-0 {
-	padding: 0;
-}
+// .col_padding-0 {
+// 	padding: 0;
+// }
 
 // ---------- HEADER ----------
 .header {
@@ -298,9 +298,7 @@ li {
 	margin-bottom: 50px;
 
 	&__text {
-		width: 80%;
-		margin: auto;
-		padding-top: 15%;
+	    //
 	}
 
 	&__img {
@@ -319,6 +317,15 @@ li {
 		padding-top: 50px;
 	}
 }
+
+// .outer {
+// 	position: relative;
+// 	background: coral;
+// }
+
+// .inner {
+// 	position: absolute;
+// }
 
 // ---------- LATEST ----------
 .latest {
@@ -750,7 +757,35 @@ li {
 	}	
 }
 
-// ---------- TABLET ----------
+// ---------- DESKTOPS XXL ----------
+@media (min-width: 1921px) {
+	.width-80 {
+		max-width: 1400px;
+	}
+}	
+
+// ---------- DESKTOPS XL ----------
+@media (min-width: 1441px) and (max-width: 1920px) {
+	.width-80 {
+		max-width: 1200px;
+	}
+}
+
+// ---------- DESKTOPS LARGE ----------
+@media (min-width: 1200px) and (max-width: 1440px) {
+	.width-80 {
+		max-width: 1000px;
+	}
+}
+
+// ---------- DESKTOPS MEDIUM ----------
+@media (min-width: 992px) and (max-width: 1199px) {
+	.width-80 {
+		max-width: 800px;
+	}
+}
+
+// ---------- TABLETS ----------
 @media (min-width: 768px) and (max-width: 991px) {
 	.width-100-sm {
 		width: 100%;
@@ -859,7 +894,7 @@ li {
 	}	
 }
 
-// ---------- MOBILE ----------
+// ---------- PHONES ----------
 @media (max-width: 767px) {
 	.width-100-xs {
 		width: 100%;
