@@ -142,14 +142,7 @@ $(document).ready(function(e) {
 
     runLogos();
 
-    $('.header__topic a').on('click', function (event) {        
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
-    });
-
-    $('.header__to-about').on('click', function (event) {        
+    $('.to-about').on('click', function (event) {        
         event.preventDefault();
         var id  = $(this).attr('href'),
         top = $(id).offset().top;
