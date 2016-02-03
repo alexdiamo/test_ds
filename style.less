@@ -479,18 +479,26 @@ li {
 
 	&__arrow {
 		position: absolute;
-		width: 10px;
-		height: 10px;
-		top: 37%;
+		top: 30%;
+		padding: 20px;
+		cursor: pointer;
+		font-size: 20px;
+		-webkit-transition: 300ms all ease;
+		-moz-transition: 300ms all ease;
+		-ms-transition: 300ms all ease;
+		-o-transition: 300ms all ease;
+		transition: 300ms all ease;
+
+		&:hover {
+			color: @coral;
+		}
 
 		&_prev {
-			background: url(images/arrow-left.png);
-	    	left: 60px;
+	    	left: 30px;
 		}
 
 		&_next {
-			background: url(images/arrow-right.png);
-	    	right: 60px;
+	    	right: 30px;
 		}
 	}
 
