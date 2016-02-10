@@ -140,7 +140,7 @@ $(document).ready(function(e) {
         $('.menu').slideUp();
     });
 
-    runLogos();
+    //runLogos();
 
     $('.to-about').on('click', function (event) {        
         event.preventDefault();
