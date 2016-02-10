@@ -130,6 +130,12 @@ li {
 	}
 }
 
+.container-full {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
 // ---------- HEADER ----------
 .header {
 	background: url(images/bg.png);
@@ -220,7 +226,7 @@ li {
     display: none;
     position: absolute;
     top: 0;
-    margin-top: 20px;
+    margin-top: 1%;
     padding: 50px 0;
     background: white;
     width: 98%;
@@ -810,38 +816,19 @@ li {
 	}
 }
 
-// ---------- DESKTOPS XXL ----------
-@media (min-width: 1921px) {
-	.width-80 {
-		max-width: 1400px;
-	}
-}	
-
 // ---------- DESKTOPS XL ----------
-@media (min-width: 1441px) and (max-width: 1920px) {
-	.width-80 {
-		max-width: 1200px;
-	}
-}
-
-// ---------- DESKTOPS LARGE ----------
-@media (min-width: 1200px) and (max-width: 1440px) {
-	.width-80 {
-		max-width: 1000px;
-	}
-}
-
-// ---------- DESKTOPS MEDIUM ----------
-@media (min-width: 992px) and (max-width: 1199px) {
-	.width-80 {
-		max-width: 800px;
+@media (min-width: 1441px) {
+	.container {
+		width: 1400px;
 	}
 }
 
 // ---------- TABLETS ----------
 @media (min-width: 768px) and (max-width: 991px) {
-	.width-100-sm {
+	.container-full-sm {
 		width: 100%;
+		margin: 0 auto;
+		padding: 0;
 	}
 
 	.base {
@@ -934,8 +921,10 @@ li {
 
 // ---------- PHONES ----------
 @media (max-width: 767px) {
-	.width-100-xs {
+	.container-full-xs {
 		width: 100%;
+		margin: 0 auto;
+		padding: 0;
 	}
 
 	.base {
